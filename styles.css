@@ -1,0 +1,93 @@
+body {
+  font-family: 'Lucida Handwriting', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #2f3bab, #6365e07e, #0056b3);
+  color: rgba(255, 0, 174, 0.9);
+}
+
+#rps-game {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0065b326;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the game content */
+}
+
+#rps-game img {
+  max-width: 100%;
+  max-height: 20%;
+
+}
+
+/*#choices button {
+  padding: 15px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}*/
+.rps-button {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.rock {
+  background-image: url('rock.png');
+}
+
+.paper {
+  background-image: url('hand.png');
+}
+
+.scissors {
+  background-image: url('scissors.png');
+}
+
+
+.rps-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0056b3;
+  background-color: #0056b3;
+}
+
+#result {
+  color: rgb(254, 244, 128);
+  margin-top: 40px;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+#scoreboard {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#player-score, #computer-score {
+  margin: 10px;
+}
+
+#game-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#round {
+  font-size: 20px;
+  margin: 10px 0;
+}
